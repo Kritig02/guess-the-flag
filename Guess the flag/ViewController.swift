@@ -22,6 +22,9 @@ class ViewController: UIViewController {
         
         countries += ["estonia", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "russia", "spain", "uk", "us"]
         
+        let infoImage = UIImage(systemName: "info.circle")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: infoImage, style: .plain, target: self, action: #selector(showScore))
+        
         button1.layer.borderWidth = 1
         button2.layer.borderWidth = 1
         button3.layer.borderWidth = 1
@@ -31,6 +34,13 @@ class ViewController: UIViewController {
         button3.layer.borderColor = UIColor.lightGray.cgColor
         askQuestions(action: nil)
     }
+    
+    @objc func showScore(){
+        let ac = UIAlertController(title: "Current Score Update", message: "Your current score is \(score)", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Continue", style: .default))
+        present(ac, animated: true)
+    }
+    
     func askQuestions(action: UIAlertAction!){
         countries.shuffle()
         button1.setImage(UIImage(named: countries[0]), for: .normal)
