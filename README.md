@@ -15,7 +15,11 @@ It serves as an introductory project to iOS development using Swift.
 
 - View flags from different countries.
 - Choose the correct flag from multiple options.
+- Keep track of how many questions have been asked
 - Keep track of your score and progress.
+- Show the current score in the navigation bar
+- One final alert controller after they have answered 10
+- Error Handling
 
 ## Getting Started
 
@@ -41,4 +45,4 @@ This project is open source and available under the MIT License.
 
 ### Contact
 
-If you have any questions or want to reach out to me, you can find me on [GitHub]([url](https://github.com/Kritig02/)https://github.com/Kritig02/).
+If you have any questions or want to reach out to me, you can find me on [GitHub](https://github.com/Kritig02/).
